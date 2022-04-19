@@ -78,7 +78,7 @@ def openWindow(master, screen_width, screen_height, title):
 def view_window(window):
     text = tk.Text(window, height=12)
     text.grid(column=0, row=0, sticky='nsew')
-    open_button = ttk.Button(window,text='Open a File',command= lambda: open_text_file(text))
+    open_button = tk.Button(window,text='Open a File',command= lambda: open_text_file(text))
     open_button.grid(column=0, row=1, sticky='w', padx=10, pady=10)
 
 def e_d_Window(window, e_or_d):
